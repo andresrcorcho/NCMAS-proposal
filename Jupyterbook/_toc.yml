@@ -1,0 +1,8 @@
+format: jb-book
+root: FrontPage
+parts:
+ - caption: 2022 NCMAS
+   chapters:
+   - file: 2022/ScienceCase.md
+   - file: 2022/HistoryWithHPC.md
+
