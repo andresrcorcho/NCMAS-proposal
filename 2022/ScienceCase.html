@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientific Justification &#8212; NCMAS / m18</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Prior Use of HPC" href="HistoryWithHPC.html" />
+    <link rel="prev" title="Computer time applications, Underworld" href="../FrontPage.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/AuWorldEQ.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">NCMAS / m18</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FrontPage.html">
+   Computer time applications, Underworld
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  2022 NCMAS
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Scientific Justification
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="HistoryWithHPC.html">
+   Prior Use of HPC
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/2022/ScienceCase.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/underworldcode/NCMAS-proposal"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#background">
+   Background
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#significance">
+   Significance
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#innovation">
+   Innovation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#impact-outcomes">
+   Impact &amp; Outcomes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#work-plan-2022">
+   WORK PLAN - 2022
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#subduction-zone-simulation">
+     Subduction Zone Simulation
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#continental-deformation-congested-subduction">
+     Continental Deformation / Congested Subduction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rebecca">
+     Rebecca ?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#coupling-of-surface-processes-and-tectonics-data-integration">
+     Coupling of Surface Processes and Tectonics / Data integration.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#underworld-suite-development">
+     Underworld suite development:
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#references">
+   References
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="scientific-justification">
+<h1>Scientific Justification<a class="headerlink" href="#scientific-justification" title="Permalink to this headline">¶</a></h1>
+<p>Note: this is mostly the 2021 application which was well received but we failed to upload the time-request document</p>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>Plate kinematic theory tells us nothing about how transient plate-boundary reorganisation events occur. Understanding these processes provides significant progress in unravelling the 4D evolution of the Australian continent and has applications globally in understanding the tectonics imprinted in continental structure.</p>
+</div>
+<div class="section" id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this headline">¶</a></h2>
+<p>3D, evolving dynamical understanding of the margin evolution process can shed light on the geological expression of such transitions. We approach this problem with a combination of forward models of the mantle-lithosphere system and the ability to include forward models of the sedimentary transport / deposition resulting from the tectonic evolution.  Our 3D models are developed in the context of an understanding of planetary evolution in which plates, mantle circulation and continental material are thermally and dynamically coupled. These tools and techniques can be used to understand the early Earth when plate tectonics may have been ephemeral or non-existent, and the manner in which plate tectonics became established.</p>
+<p>The dynamics of plate tectonics is a fundamental aspect of the geological canon for which there is very little quantitative / predictive modelling and many outstanding questions. Of particular interest to us at the moment is the question of how continentals, plates and deep flow interact and the record that leaves in the geology.</p>
+<ul class="simple">
+<li><p>How do plates develop in planetary flow and how do plate boundaries emerge ?</p></li>
+<li><p>How do continents modulate convection patterns and plate boundary dynamics ?</p></li>
+<li><p>How are continents built, how do they survive and when is continental crust destroyed ?</p></li>
+<li><p>Under what conditions does the subduction zone recover / re-initiate behind an accreted terrane ?</p></li>
+<li><p>When/where does slab break-off occur ?</p></li>
+<li><p>How are these processes captured in the geological / sedimentary record ?</p></li>
+<li><p>How are these processes playing out in the present day record ?</p></li>
+<li><p>What roles do localized and regional uplift play in the development of crustal structure?</p></li>
+</ul>
+<p>Accretion is a process which has almost certainly been occurring for billions of years (as long as plate tectonics has been active). The better understanding of accretion and how it might have occurred in the early Earth has immediate applications to interpreting the geology of ancient terranes that make up 2/3 of the Australian continent.</p>
+<p>The Earth’s continental topography is ephemeral - it reflects the balance of deep convective processes, density variations and elastic stresses in the lithosphere. Changes in convective stresses, erosion of high topography (and deposition of sediments in regions of low topography), relaxation of elastic stresses all contribute to erase the history of surface deformation.</p>
+<p>To piece together this history, we propose a modelling approach in which we develop a quantitative, dynamic understanding of the subduction-collision-accretion-subduction cycle using state-of-the-art numerical simulations (Underworld) constrained by geological and geophysical observations. Models that people have developed using Underworld are able to capture the full three-dimensional dynamics of a subducting plate, the mantle flow, deformation of the over-riding plate and accreted terrane, and reconfiguration of the plate boundary — all in a self-consistent manner. Since these models produce a 3D stress field and an associated surface uplift, it is also possible to combine these models with state of the art surface evolutions models (for example Badlands and Quagmire) to connect to the sedimentary record.</p>
+</div>
+<div class="section" id="significance">
+<h2>Significance<a class="headerlink" href="#significance" title="Permalink to this headline">¶</a></h2>
+<p>This study addresses a fundamental question in the dynamics of the mantle and continental lithosphere and how this differs from the plate tectonics paradigm.  The onset of plate tectonics is a key unknown — was it ubiquitous since the early Archean or does the Proterozoic represent the changes associated with the first plate motions ? This question continues to be debated despite being a first order unknown in Earth evolution.
+Accretion of island arcs and continental fragments represents one of the fundamental mechanisms of continental growth, with numerous examples dating back to Archean time. Most of Alaska and much of western North America consists of accreted terranes. The geological history of Australia can only be understood by analysing the accretionary events which have built the continent. Geologists currently lack a unifying conceptual framework for the process of accretion: this project aims to provide this framework.
+Another conundrum of modern plate tectonics is the manner in which subduction zones initiate. It is known that oceanic transform faults, under appropriate loading conditions, can initiate subduction (e.g. Hall et al, 2003), but the initiation at a passive margin has not been properly explained dynamically. The computational models that we propose to use are specifically capable of addressing this issue.
+A significant application of our research is in constraining the possible locations of trenches, and hence mantle buoyancy distribution, by plate reconstruction.
+Because trenches can be highly oblique to the plate motion direction, their location and orientation is weakly constrained in reconstructions. Slab windows produce the most dramatic transients in trench motion and reconfiguration. Computational models that are able to model the boundary evolution and the thermo-mechanics of lithosphere as it is subducted can show when slab windows form and how the dynamics of the models change as a result.</p>
+</div>
+<div class="section" id="innovation">
+<h2>Innovation<a class="headerlink" href="#innovation" title="Permalink to this headline">¶</a></h2>
+<p>In this project the computational backbone is provided by highly parallel solution methods, efficient solvers and particle-based techniques to achieve levels of resolution and rheological fidelity which are a step above the standard Finite Element Methods that use only mesh-based representations. The Underworld developers have concentrated on improving the fidelity of models available to the community and demonstrated that a general code is able to reproduce state-of-the-art studies for specific processes (such as the subduction zone interface - Garel et al, 2014) into general models that can be reused. For example, see the figure below (supplied by the Underworld development team).
+Our proposed approach concentrates on understanding the dynamic evolution of plate boundaries in four dimensions with very careful attention to the details of the rheology and numerical approximations at the sub-grid scale. We are therefore confident that the characteristic patterns that have been reported in numerical models do have meaningful analogues in the geological record.
+In this project we propose to combine expertise in algorithm development, parallel computing and computational physics alongside domain expertise. We do this in collaboration with the Underworld development team and using the open-source Underworld software. Any novel computational developments that emerge from this project will, after publication, be made available to the community by contributing them to the Underworld community github site where new code can be submitted for review. Developments in the surface process modelling domain can be contributed to the Quagmire team in the same manner.</p>
+</div>
+<div class="section" id="impact-outcomes">
+<h2>Impact &amp; Outcomes<a class="headerlink" href="#impact-outcomes" title="Permalink to this headline">¶</a></h2>
+<p>The ultimate outcome of this work is that we are starting to reinterpret the large-scale movements and contorted regional architecture in the context of transient accretion followed by a return to stable subduction retreat. Unlike previous reconstructions based on interpreted plate boundary kinematics, simple 2D tectonic sections and rigid plate reconstructions, our reconstruction will consider the terminations of micro-continents, slab geometry, and the role of mantle flow in 3D. We focus on the geological record immediately following a major accretionary event because this is the period of significant plate reconfiguration and modification leading to a new stable convergent margin.
+We are beginning to see that the overall tectonic system in such situations has a simple explanation - with morphological complexities in the crustal architecture occurring in a predictable manner during transient episodes of plate margin disequilibrium. The implication of this research is that subduction zones are persistent and may reconfigure and re-form in preference to jumping backward. Unlike many representation of accretionary margins characterised by multiple subduction events with different polarities (e.g. Foster et al., 2009), many of the relationships evident in complex accretionary orogenic belts (e.g. Oroclines) may be explained by a single subduction characterised by transient instabilities. This represents a paradigm shift in interpretation of long-lived accretionary orogenic systems including the Tasmanides, but equally, the Altaids in central Asia.
+In recent years numerical model outcomes have been  calibrated against a modern example of an accretionary orogenic system (e.g. Moresi 2014). Mantle flow, slab windowing, strike slip deformation, and development of oroclinal crustal geometries are major geodynamic process allowing convergent margins to transition from one stable configuration to another. All of these features are present in the Yakutat. We can study the collision, and plateau subduction process in a Cartesian geometry at first, and then move to geographically constrained models based on the reconstructed plate geometry. The Yakutat terrane is the remnant of an oceanic plateau. It is interpreted to have been accreted onto the margin of north America since the Pliocene, which coincides with a decrease in arc-related magma production in the Wrangall Mountains, making it one of the most juvenile accretionary terranes on the planet.</p>
+<p>The Yakutat lies adjacent to a large slab window, which is interpreted to have opened during the Miocene (Thorkelson et al., 2011). The region is also characterised by large horizontal strike-slip translations, accommodated along major plate margin parallel transpressional fault systems, as well as extremely rapid uplift and mountain building associated with the St Elias Orogen (Christeson et al., 2010) where the plateau is actively subducting. The Yakutat terrane has been subject to intense geophysical study. High resolution plate velocity data derived from GPS data, seismic data that constrains the geometry and composition of the Yakutat terrane and the extent of subduction (Worthington et al., 2012).
+The USArray -Transportable Array (Fig above, yellow) is currently being deployed across Alaska complementing the temporary broadband sites (Figure, above, red) which are currently under analysis and have already imaged three-dimensional variation in interface structure that is related to the previously mentioned terrane assemblages, extinct arcs, and contrasts between the subducting oceanic lithosphere, Yakutat terrane, and the overriding continental lithosphere (O’Driscoll et al, 2013). We will use existing seismic observations to constrain the Moho, lithosphere asthenosphere boundary and slab geometries (e.g. Worthington et al., 2012; O’Driscoll et al., 2013).  This information will be combined with GPS velocities and strain rates, and geological observations to develop refined models of modern day examples. We will incorporate new findings from future USArray data in Alaska to refine the nature/extent of entrainment of the accreted crust during collision, and map mantle flow patterns.</p>
+</div>
+<div class="section" id="work-plan-2022">
+<h2>WORK PLAN - 2022<a class="headerlink" href="#work-plan-2022" title="Permalink to this headline">¶</a></h2>
+<p>We maintain  a culture of robust negotiation for these resources which would be moderately milder with a larger allocation.</p>
+<div class="section" id="subduction-zone-simulation">
+<h3>Subduction Zone Simulation<a class="headerlink" href="#subduction-zone-simulation" title="Permalink to this headline">¶</a></h3>
+<p>This builds upon recent work on slab dynamics and stress distribution / seismicity (Sandiford et al., 2019a; Sandiford et al. 2019b, Carluccio, 2019)  that was published recently and for which all model files are openly available. A PhD student project extends these results into 3D. These have an expected requirement of 500-750 kSU / quarter in line with recent usage. The work in the coming year is to look at 3D effects on topography and deformation in the over-riding plate which will require a further 500-750 kSU/quarter.</p>
+</div>
+<div class="section" id="continental-deformation-congested-subduction">
+<h3>Continental Deformation / Congested Subduction<a class="headerlink" href="#continental-deformation-congested-subduction" title="Permalink to this headline">¶</a></h3>
+<p>Large-scale models have been used to understand how mantle flow and plate motions produce identifiable signatures in the continental geological record (Yang et al. 2019). We propose to extend this work with high resolution studies of Alaska and New Zealand in order to understand the response of the continental lithosphere to boundary forces and looking at three dimensional deformation patterns with localisation requiring very high resolution. Together we estimate 150-250kSU/q for this component of the work plan.</p>
+</div>
+<div class="section" id="rebecca">
+<h3>Rebecca ?<a class="headerlink" href="#rebecca" title="Permalink to this headline">¶</a></h3>
+<p>Destroying Craton: Cooper et al. (2020) concluded that destruction of cratonic lithosphere can be directed and magnified by both the cratonic shape and adjacent subduction using 3D instantaneous numerical regional scale models. We proposed here to understand the time dependent nature of the interaction between the stable, long-lined cratonic lithosphere and transient, highly deforming active subduction zones.</p>
+<p>LM - this is probably off for the time being:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Early Earth and Planets:  Beall et al., 2018 has demonstrated onset of plate tectonics may be responsible for forming the “indestructible” cratonic nuclei which have persisted in the Earth for billions of years with very little deformation. We will continue this work in a broader application to other solid bodies in the solar system and to take the work into a cylindrical geometry and 3D. We estimate 100-150kSU/q is needed to continue this exploration of parameter space and development of scaling theories. 
+</pre></div>
+</div>
+</div>
+<div class="section" id="coupling-of-surface-processes-and-tectonics-data-integration">
+<h3>Coupling of Surface Processes and Tectonics / Data integration.<a class="headerlink" href="#coupling-of-surface-processes-and-tectonics-data-integration" title="Permalink to this headline">¶</a></h3>
+<p>State of the art thermo-mechanical models have become very efficient at testing scenarios of tectonic evolution but uncertainties on the rheologies and the complexity of the underlying physics have so far limited the potential to quantitatively predict uplift and subsidence. Underworld Thermo-mechanical models and Quagmire surface processes models can be fully coupled and have thus  the potential to help us resolve the complex interactions between tectonic and erosion in a wide range of tectonic settings. The models also require careful validation and better integration of field data to prevent error in interpretation. Low temperature thermochronology has been extensively used to quantitatively constrain the thermal histories of rocks. It can provide important information on tectonic uplift (or subsidence) by measuring the erosional (or burial) response and can also map the spatial and temporal pattern of geomorphic response of a landscape. We use the temperature evolution of our coupled thermo-mechanical models with surface processes to predict Apatite fission track data (Ages and Track lengths distributions). The aim is to provide a direct means of comparison with actual empirical thermochronometric data which will allow different model scenarios and/or model parameter choices to be robustly tested.</p>
+</div>
+<div class="section" id="underworld-suite-development">
+<h3>Underworld suite development:<a class="headerlink" href="#underworld-suite-development" title="Permalink to this headline">¶</a></h3>
+<p>We should comment that this is removed when we write our</p>
+<p>The Underworld and Quagmire codes are a community effort that benefits from all contributions made to the codebase by collaborating teams. In this project, we undertake to contribute all developments to the Underworld open-source projects. In particular, there is an attempt to refresh the solver architecture of Underworld which is of benefit to the community and we intend to participate in this effort. We are requesting 200kSU/q (split between Raijin and Magnus) to support this community exercise.</p>
+</div>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p><span id="id1">[<a class="reference internal" href="#id5">Wil63</a>]</span></p>
+<p id="id2"><dl class="citation">
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id1">Wil63</a></span></dt>
+<dd><p>J. Tuzo Wilson. CONTINENTAL DRIFT. <em>Scientific American</em>, 208(4):86–103, 1963. <a class="reference external" href="https://doi.org/10.1038/scientificamerican0463-86">doi:10.1038/scientificamerican0463-86</a>.</p>
+</dd>
+</dl>
+</p>
+<p>Should catch these ones:</p>
+<p>Beall, A. P., L. N. Moresi, and C. M. Cooper (2018), Formation of cratonic lithosphere during the initiation of plate tectonics, Geology, 46(6), 487–490, doi:10.1130/G39943.1.</p>
+<p>Betts, P. G., Moresi, L. N., Miller, M. S., &amp; Willis, D. (2015). Geodynamics of oceanic plateau and plume head accretion and their role in Phanerozoic orogenic systems of China. Geoscience Frontiers. <a class="reference external" href="http://doi.org/10.1016/j.gsf.2014.07.002">http://doi.org/10.1016/j.gsf.2014.07.002</a></p>
+<p>Carluccio, R., Kaus, B., Capitanio, F. A., &amp; Moresi, L. N. (2019). The impact of a very weak and thin upper asthenosphere on subduction motions. Geophysical Research Letters, 46(21), 11893-11905.</p>
+<p>Christeson GL, Gulick SP, van Avendonk HJ, Worthington LL, Reece RS, Pavlis TL. 2010. The Yakutat terrane: Dramatic change in crustal thickness across the transition fault, Alaska. Geology 38: 895-8</p>
+<p>Cooper, C. M., M. S. Miller, and L. Moresi (2016), The structural evolution of the deep continental lithosphere, Tectonophysics, 695, 1–89, doi:10.1016/j.tecto.2016.12.004.</p>
+<p>Cooper, C.M., Farrington, R.J. and Miller, M.S., (2020). On the destructive tendencies of cratons. Geology.</p>
+<p>Foster, D. A., and D. R. Gray (2000), Evolution and structure of the Lachlan Fold Belt (Orogen) of eastern
+Australia, Annu. Rev. Earth Planet. Sci., 28(1), 47–80, doi:10.1146/annurev.earth.28.1.47.</p>
+<p>Garel, F., S. Goes, D. R. Davies, J. H. Davies, S. C. Kramer, and C. R. Wilson (2014), Interaction of subducted slabs with the mantle transition-zone: A regime diagram from 2-D thermo-mechanical models with a mobile trench and an overriding plate, Geochemistry, Geophysics, Geosystems, 15(5), 1739–1765, doi:10.1002/2014GC005257.</p>
+<p>Miller, M. S., and L. Moresi (2018), Mapping the Alaskan Moho, Seismological Research Letters, 1–7, doi:10.1785/0220180222.</p>
+<p>Moresi, L. N., P. G. Betts, M. S. Miller, and R. A. Cayley (2014), Dynamics of continental accretion, Nature, 508(7495), 245–248, doi:10.1038/nature13033.</p>
+<p>Moresi, L,. (2015), Computational Plate Tectonics and the Geological Record in the Continents, SIAM News, 48(10), 1–2, doi:10.13140/RG.2.2.24660.91521.</p>
+<p>O’Driscoll L,  M. Miller; Y. Kim, 2013. Imaging the lithosphere-asthenosphere boundary of the Northern Cordillera using SP receiver functions Fall Meeting, AGU, San Francisco, USA</p>
+<p>Sandiford, D. and Moresi, L.: Improving subduction interface implementation in dynamic numerical models, Solid Earth, 10, 969–985, <a class="reference external" href="https://doi.org/10.5194/se-2019-11">https://doi.org/10.5194/se-2019-11</a>, 2019.</p>
+<p>Sandiford, D., Moresi, L., Sandiford, D., Yang, T. Geometric controls on flat slab seismicity, Earth and Planetary Science Letters, 527,10.1016/j.epsl.2019.115787, 2019</p>
+<p>Thorkelson DJ, Madsen JK, Sluggett CL. 2011. Mantle flow through the Northern Cordilleran slab window revealed. Geology, 39: 267-70</p>
+<p>Worthington LL, Van Avendonk HJA, Gulick SPS, Christeson GL, Pavlis TL. 2012. Crustal structure of the Yakutat terrane and the evolution of subduction and collision in southern Alaska. J Geophys. Res. 117.</p>
+<p>Yang, T., Moresi, L., Gurnis, M., Liu, S., Sandiford, D., Williams, S., &amp; Capitanio, F. A. (2019). Contrasted East Asia and South America tectonics driven by deep mantle flow. Earth and Planetary Science Letters, 517, 106-116.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./2022"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            
+
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../FrontPage.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Computer time applications, Underworld</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="HistoryWithHPC.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Prior Use of HPC</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Anonymous Third Person<br/>
+        
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
