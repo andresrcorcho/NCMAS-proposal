@@ -1,8 +1,16 @@
 # Scientific Justification
 
-Note: this is mostly the 2021 application which was well received but we failed to upload the time-request document
-
 ## Summary
+
+```{figure} Figures/HimalayaS.png
+---
+width: 100%
+name: "Himalayas"
+---
+One of the most dramatic departures from plate-like deformation on Earth occurs where the Indian subcontinent collides with the Eurasian continent. The map on the left is a satellite image with the flow lines from the plate motion vector field drawn in red. The major rivers which drain the Himalayan mountain belt and the plateau are also shown and are clearly out of equilibrium with the long-wavelength topography. On the right is the same region showing 50 years of Earthquake data for events larger than magnitude 4.5, coloured by depth and superimposed on the strain rate. (Figure: Moresi, 2015)
+```
+
+This project explores coupled geodynamic models that connect plate dynamics, mantle flow and continental tectonics. 
 
 Plate kinematic theory tells us nothing about how transient plate-boundary reorganisation events occur. Understanding these processes provides significant progress in unravelling the 4D evolution of the Australian continent and has applications globally in understanding the tectonics imprinted in continental structure. 
  

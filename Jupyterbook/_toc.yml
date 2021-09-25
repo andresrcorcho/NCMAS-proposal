@@ -6,3 +6,8 @@ parts:
    - file: 2022/ScienceCase.md
    - file: 2022/HistoryWithHPC.md
 
+ - caption: 2021 NCMAS
+   chapters:
+   - file: 2021/ScienceCase.md
+   - file: 2021/HistoryWithHPC.md
+
