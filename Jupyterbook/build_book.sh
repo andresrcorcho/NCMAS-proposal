@@ -1,23 +1,24 @@
 #! /usr/bin/env bash
 
-# 
 
-jupyter-book build . 
-
-# Build the 2022 application page by page
-
+# Build the annual application page by page ... this is a bit clunky 
+# to get around some rather severe limitations in jb builder for
+# single files but it ensures the figure numbers reset for each page 
+# when uploaded.
 
 for SUBDIR in 2022 2021
 do
-    ln -s _static $SUBDIR/_static 
-    ln -s JupyterBook.bib $SUBDIR/JupyterBook.bib
-    jupyter-book build $SUBDIR/ScienceCase.md
-    unlink $SUBDIR/_static $SUBDIR/JupyterBook.bib
+    ln -s ../_static $SUBDIR/_static
+    ln -s ../JupyterBook.bib $SUBDIR/JupyterBook.bib
+    jupyter-book build $SUBDIR/$SUBDIR.ScienceCase.md
+    jupyter-book build $SUBDIR/$SUBDIR.HistoryWithHPC.md
+    unlink $SUBDIR/_static 
+    unlink $SUBDIR/JupyterBook.bib
 done
-# ln -s _static $SUBDIR/_static 
-# ln -s JupyterBook.bib $SUBDIR/JupyterBook.bib
-# jupyter-book build $SUBDIR/ScienceCase.md
-# unlink $SUBDIR/_static $SUBDIR/JupyterBook.bib
+
+jupyter-book build . 
+
+
 
 # mkdir -p _build/html/Figures/Movies
 # cp -r Figures/Movies _build/html/Figures

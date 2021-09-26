@@ -1,12 +1,12 @@
 # Book settings
 title: NCMAS / m18 
-author: Anonymous Third Person 
-logo: Figures/AuWorldEQ.jpg
+author: Anonymous (3rd Person)
+logo: Figures/Images/AuWorldEQ.jpg
 exclude_patterns: ["README.md", "Notes/*", "Scripts/*", "Lectures/*.reveal.md"]
 
 latex:
   latex_documents:
-    targetname: JupyterBookHub.tex
+    targetname: JupyterBookM18.tex
 
 html:
 # home_page_in_navbar option: true
@@ -24,6 +24,7 @@ sphinx:
     html_show_copyright: false
     mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
     # html_extra_path: ['Figures/Movies']
+    bibtex_reference_style: author_year
 
     myst_enable_extensions: 
     - amsmath
