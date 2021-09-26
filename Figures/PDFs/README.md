@@ -1,1 +1,0 @@
-PDFs for inclusion in the book (not ones that are automatically built as slideshows)
