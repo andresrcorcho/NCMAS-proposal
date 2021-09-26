@@ -42,11 +42,12 @@ p {
 @media print {
     .bd-toc {
         visibility: hidden;
+        width: 0px;
     }
 
-    /* footer {
+    footer {
         visibility: hidden;
-    } */
+    } 
 
 }
 

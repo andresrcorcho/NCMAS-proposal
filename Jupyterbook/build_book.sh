@@ -6,15 +6,25 @@
 # single files but it ensures the figure numbers reset for each page 
 # when uploaded.
 
-for SUBDIR in 2022 2021
-do
-    ln -s ../_static $SUBDIR/_static
-    ln -s ../JupyterBook.bib $SUBDIR/JupyterBook.bib
+
+# 2022 format 
+
+SUBDIR=2022
+ln -s ../_static $SUBDIR/_static
+ln -s ../JupyterBook.bib $SUBDIR/JupyterBook.bib
+    jupyter-book build $SUBDIR/$SUBDIR.Proposal.md
+unlink $SUBDIR/_static 
+unlink $SUBDIR/JupyterBook.bib
+
+#2021 version
+
+SUBDIR=2021
+ln -s ../_static $SUBDIR/_static
+ln -s ../JupyterBook.bib $SUBDIR/JupyterBook.bib
     jupyter-book build $SUBDIR/$SUBDIR.ScienceCase.md
     jupyter-book build $SUBDIR/$SUBDIR.HistoryWithHPC.md
-    unlink $SUBDIR/_static 
-    unlink $SUBDIR/JupyterBook.bib
-done
+unlink $SUBDIR/_static 
+unlink $SUBDIR/JupyterBook.bib
 
 jupyter-book build . 
 

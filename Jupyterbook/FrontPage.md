@@ -12,11 +12,10 @@ name: "Himalayas"
 
 ## Applications
 
- - [2022 NCI Merit Allocation - Science Case](2022/2022.ScienceCase)
- - [2022 NCI Merit Allocation - HPC Case](2022/2022.HistoryWithHPC)
+ - [2022 NCI Merit Allocation - Science Case](2022/2022.Proposal)
  - [2022 NCI Merit Allocation - Notes](2022/2022.Notes)
- - <a href="../_page/2022-2022.ScienceCase/html/index.html"> 2022 - Science case submission </a>
- - <a href="../_page/2022-2022.HistoryWithHPC/html/index.html"> 2022 - HPC case submission </a>
+ - <a href="../_page/2022-2022.Proposal/html/index.html"> 2022 - Single Page for Submission </a>
+
 
  ---
 
