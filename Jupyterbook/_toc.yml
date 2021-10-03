@@ -4,6 +4,7 @@ parts:
  - caption: 2022 NCMAS
    chapters:
    - file: 2022/2022.Proposal.md
+   - file: 2022/2022.Comp.md
    - file: 2022/2022.Notes.md
 
  - caption: 2021 NCMAS
@@ -11,4 +12,3 @@ parts:
    - file: 2021/2021.ScienceCase.md
    - file: 2021/2021.HistoryWithHPC.md
    - file: 2021/2021.Notes.md
-
