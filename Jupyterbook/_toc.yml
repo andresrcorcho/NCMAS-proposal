@@ -3,12 +3,15 @@ root: FrontPage
 parts:
  - caption: 2022 NCMAS
    chapters:
-   - file: 2022/2022.Proposal.md
-   - file: 2022/2022.Comp.md
-   - file: 2022/2022.Notes.md
+   - file: 2022/2022.Proposal
+     title: "Science Proposal"
+   - file: 2022/2022.Comp
+     title: "Computational Requirements"
+   - file: 2022/2022.References
+   - file: 2022/2022.Notes
 
  - caption: 2021 NCMAS
    chapters:
-   - file: 2021/2021.ScienceCase.md
-   - file: 2021/2021.HistoryWithHPC.md
-   - file: 2021/2021.Notes.md
+   - file: 2021/2021.ScienceCase
+   - file: 2021/2021.HistoryWithHPC
+   - file: 2021/2021.Notes
