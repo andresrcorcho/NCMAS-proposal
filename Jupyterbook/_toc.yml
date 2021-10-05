@@ -4,7 +4,9 @@ parts:
  - caption: 2022 NCMAS
    chapters:
    - file: 2022/2022.Proposal
+     title: "Science Proposal"
    - file: 2022/2022.Comp
+     title: "Computational Requirements"
    - file: 2022/2022.References
    - file: 2022/2022.Notes
 
